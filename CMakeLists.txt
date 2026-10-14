@@ -15,6 +15,8 @@ if (NOT PICO_PROGRAM_MAIN_ENTRY)
 	set(OUTPUT_SPI_CLOCK_PIN 2)
 	set(OUTPUT_SPI_INTERFACE spi0)
 
+	add_compile_definitions(PICO_LED_MAX_CHANNELS=4)
+	
 	# Use multi-segment, starting index of second led strip or OFF to disable
 		# Aktiviere die Multi-Segment-Aufteilung für deine 4 Streifen
 		set(SECOND_SEGMENT_INDEX 87)    # Start von Streifen 2 (GPIO 3)
