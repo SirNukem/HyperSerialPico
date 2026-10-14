@@ -15,13 +15,13 @@ if (NOT PICO_PROGRAM_MAIN_ENTRY)
 	set(OUTPUT_SPI_CLOCK_PIN 2)
 	set(OUTPUT_SPI_INTERFACE spi0)
 
-	add_compile_definitions(PICO_LED_MAX_CHANNELS=4)
+
 	
 
 # Aktiviere die Multi-Segment-Aufteilung nach HyperHDR-Reihenfolge (87, 87, 47, 47)
-set(SECOND_SEGMENT_INDEX 87)    # Wechselt nach dem Oben-Streifen auf GPIO 3
-set(THIRD_SEGMENT_INDEX 174)   # Wechselt nach dem Unten-Streifen auf GPIO 4
-set(FOURTH_SEGMENT_INDEX 221)  # Wechselt nach dem Links-Streifen auf GPIO 5
+set(SECOND_SEGMENT_INDEX 134)   # Schaltet nach genau der Hälfte (87+47) auf GPIO 3 um
+
+
 
 
 	
