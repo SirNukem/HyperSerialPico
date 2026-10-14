@@ -18,7 +18,7 @@ if (NOT PICO_PROGRAM_MAIN_ENTRY)
 	# Use multi-segment, starting index of second led strip or OFF to disable
 	set(SECOND_SEGMENT_INDEX 143)   # Ab welcher LED soll Kanal 2 (GPIO 3) starten? - 47
 	set(THIRD_SEGMENT_INDEX 181)  # Ab welcher LED soll Kanal 3 (GPIO 4) starten? - +87
-	set(FOURTH_SEGMENT_INDEX 268) # Ab welcher LED soll Kanal 4 (GPIO 5) starten? - +47
+	set(FOURTH_SEGMENT_INDEX 268) # Ab welcher LED soll Kanal 4 (GPIO 5) starten? - 
 
 	
 	# If multi-segment is used and it's reversed, set this option to ON to enable reversing
