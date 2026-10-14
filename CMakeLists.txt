@@ -17,11 +17,12 @@ if (NOT PICO_PROGRAM_MAIN_ENTRY)
 
 	add_compile_definitions(PICO_LED_MAX_CHANNELS=4)
 	
-	# Use multi-segment, starting index of second led strip or OFF to disable
-		# Aktiviere die Multi-Segment-Aufteilung für deine 4 Streifen
-		set(SECOND_SEGMENT_INDEX 87)    # Start von Streifen 2 (GPIO 3)
-		set(THIRD_SEGMENT_INDEX 134)   # Start von Streifen 3 (GPIO 4)
-		set(FOURTH_SEGMENT_INDEX 221)  # Start von Streifen 4 (GPIO 5)
+
+# Aktiviere die Multi-Segment-Aufteilung nach HyperHDR-Reihenfolge (87, 87, 47, 47)
+set(SECOND_SEGMENT_INDEX 87)    # Wechselt nach dem Oben-Streifen auf GPIO 3
+set(THIRD_SEGMENT_INDEX 174)   # Wechselt nach dem Unten-Streifen auf GPIO 4
+set(FOURTH_SEGMENT_INDEX 221)  # Wechselt nach dem Links-Streifen auf GPIO 5
+
 
 	
 	# If multi-segment is used and it's reversed, set this option to ON to enable reversing
